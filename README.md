@@ -47,10 +47,27 @@ Un hospital necesita digitalizar su sistema de gestión. El sistema debe permiti
 
 ## 📖 Historias de Usuario (Product Backlog)
 
-| ID | Historia | Prioridad | Story Points |
-|:---|:---|:---:|:---:|
-| **HU-01** | Como **recepcionista**, quiero registrar pacientes para mantener un historial médico digital | Alta | 5 |
+| ID        | Historia | Prioridad | Story Points |
+|:----------|:---|:---:|:---:|
+| **HU-01** | Como **recepcionista**, quiero registrar pacientes con sus datos personales, historial clínico y grupo sanguíneo para mantener un historial médico digital. | Alta | 5 |
+| **HU-02** | Como **recepcionista**, quiero registrar las alergias de mis pacientes para que el médico no les recete medicamentos que les causen una reacción alérgica. | Alta | 3 |
+| **HU-03** | Como **recepcionista**, quiero registrar las contraindicaciones de mis pacientes para que el médico no les aplique tratamientos que agraven su condición. | Alta | 3 |
+| **HU-04** | Como **recepcionista**, quiero consultar el historial médico de un paciente para gestionar su atención. | Alta | 4 |
+| **HU-05** | Como **paciente**, quiero consultar mi historial médico para revisar mis citas anteriores. | Alta | 3 |
+| **HU-06** | Como **administrador**, quiero contratar diferentes tipos de empleados (médicos generales, cirujanos y enfermeros) para que atiendan a los pacientes. | Alta | 5 |
+| **HU-07** | Como **administrador**, quiero asignar especialidades médicas a los médicos para cobrar tarifas justas en función de cada especialidad. | Alta | 5 |
+| **HU-08** | Como **administrador**, quiero gestionar los turnos de trabajo de los empleados para garantizar cobertura médica en todos los horarios. | Alta | 4 |
+| **HU-09** | Como **administrador**, quiero asignar salarios base a los empleados para que el sistema calcule automáticamente el salario final con sus bonificaciones. | Media | 4 |
+| **HU-10** | Como **recepcionista**, quiero agendar citas médicas validando la disponibilidad de los médicos para evitar conflictos de horario. | Alta | 5 |
+| **HU-11** | Como **recepcionista**, quiero confirmar citas de los pacientes para tener una comunicación clara y evitar errores de asistencia. | Media | 3 |
+| **HU-12** | Como **paciente**, quiero cancelar mi cita para liberarla en caso de un evento inesperado que me impida asistir. | Media | 2 |
+| **HU-13** | Como **médico**, quiero registrar el diagnóstico de un paciente para mantener su historial clínico actualizado. | Alta | 5 |
+| **HU-14** | Como **médico**, quiero registrar recetas médicas para que el paciente tenga acceso al tratamiento necesario para aliviar su enfermedad. | Alta | 5 |
+| **HU-15** | Como **médico**, quiero marcar una cita como "en atención" para indicar que el paciente está siendo atendido en ese momento. | Media | 2 |
+| **HU-16** | Como **médico**, quiero marcar una cita como "completada" para registrar que la atención médica fue finalizada exitosamente. | Media | 2 |
 
+ 
+---
 
 ---
 

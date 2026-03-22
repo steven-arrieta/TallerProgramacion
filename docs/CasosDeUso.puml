@@ -1,0 +1,49 @@
+@startuml
+skinparam actorStyle awesome
+actor Recepcionista as RE
+actor Medico as ME
+actor Paciente as PA
+actor Administrador as AD
+
+left to right direction
+rectangle "Gestion Hospitalaria" {
+usecase "Registrar paciente" as RP
+usecase "Registrar Alergias" as RA
+usecase "Registrar contraindicaciones" as RC
+usecase "Consultar Historial"as CH
+usecase "Contratar empleados" as CE
+usecase "Asignar especialidades medicas" as AE
+usecase "Gestionar turnos de trabajo" as GT
+usecase "Asignar salarios base" as AS
+usecase "Agendar citas medicas" as AC
+usecase "Cancelar cita" as CC
+usecase "Confirmar cita" as CEE
+usecase "Atender cita" as AAC
+usecase "Completar cita" as CCC
+usecase "Registrar diagnosticos" as RD
+usecase "Registrar recetas medicas" as RCM
+}
+
+RE --> RP
+RE --> RA
+RE --> RC
+RE --> CH
+RE --> AC
+RE --> CEE
+
+PA --> CH
+PA --> CC
+
+AD --> CE
+AD --> AE
+AD --> GT
+AD --> AS
+
+ME --> RD
+ME --> AAC
+ME --> RCM
+ME --> CCC
+
+
+
+@enduml
