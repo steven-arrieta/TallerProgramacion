@@ -1,0 +1,29 @@
+@startuml
+abstract class  Persona {
+-id: String
+-nombre: String
+-apellido: String
+-fechaNacimiento: LocalDate
+-email: String
+
++{abstract} calcularEdad(): int
++{abstract} obtenerTipo(): String
+}
+
+abstract class Empleado {
+-legajo: String
+-fechaContratacion: LocalDate
+-salarioBase: int
+-activo: boolean
+
++{abstract} calcularSalario(): double
++antiguedad(): int
+}
+
+class Paciente {
+-historiaClinicaId: String
+-grupoSanguineo: GrupoSanguineo
+-alergias: List<String>
+
+}
+@enduml
