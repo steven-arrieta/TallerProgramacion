@@ -2,24 +2,22 @@ package modelo.abstractas;
 
 import java.time.LocalDate;
 
-public abstract class Persona {
-    protected int id;
-    protected String nombre;
-    protected String apellido;
-    protected LocalDate fechaNacimiento;
-    protected String email;
+public abstract class Empleado extends Persona {
+    protected int legajo;
+    protected LocalDate fechaContratacion;
+    protected double salarioBase;
 
-    public Persona(int id, String nombre, String apellido, LocalDate fechaNacimiento, String email) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.fechaNacimiento = fechaNacimiento;
-        this.email = email;
+    public Empleado(int id, String nombre, String apellido, LocalDate fechaNacimiento, String email,
+                    int legajo, LocalDate fechaContratacion, double salarioBase) {
+        super(id, nombre, apellido, fechaNacimiento, email);
+        this.legajo = legajo;
+        this.fechaContratacion = fechaContratacion;
+        this.salarioBase = salarioBase;
     }
 
-    public int calcularEdad() {
-        return LocalDate.now().getYear() - fechaNacimiento.getYear();
+    public int antiguedad() {
+        return LocalDate.now().getYear() - fechaContratacion.getYear();
     }
 
-    public abstract String obtenerTipo();
+    public abstract double calcularSalario();
 }
